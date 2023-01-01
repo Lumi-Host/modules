@@ -159,14 +159,6 @@ class InlineStuffMod(loader.Module):
         self._db.set("hikka.inline", "bot_token", None)
         await utils.answer(message, self.strings("bot_updated"))
 
-    async def aiogram_watcher(self, message: BotInlineMessage):
-        if message.text != "/start":
-            return
-
-        await message.answer_photo(
-            "https://t.me/authorche/166",
-            caption=self.strings("this_is_hikka"),
-        )
 
     async def client_ready(self, client, db):
         if self.get("migrated"):
