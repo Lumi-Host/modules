@@ -56,9 +56,10 @@ class InlineStuffMod(loader.Module):
             " Для їх застосування потрібно перезавантаження AuthorChe`s</b>"
         ),
         "this_is_hikka": (
-             "✌️ <b>Привіт! Я бот зворотнього зв`язку з Автором. Використовуй"
-            " /feedback щоб надіслати повідомлення\n\n Будь ласка, ознайомтесь з /nometa перед листуванням</b>
-        ),
+             "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
+            " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
+            ' href="https://t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
+            ' href="http://authorche.ml">Links</a></b>'   ),
     }
 
     async def watcher(self, message: Message):
