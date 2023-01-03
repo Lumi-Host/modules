@@ -1,5 +1,3 @@
-
-
 import re
 import string
 
@@ -39,7 +37,7 @@ class InlineStuffMod(loader.Module):
      }
 
 
-strings_ua = {
+     strings_ua = {
         "bot_username_invalid": (
             "<emoji document_id=5415905755406539934>🚫</emoji> <b>Неправильний нік"
             " бота. Він має закінчуватись на </b><code>bot</code><b> и бути не коротше"
@@ -61,7 +59,7 @@ strings_ua = {
        ),
     }
 
-    async def watcher(self, message: Message):
+        async def watcher(self, message: Message):
         if (
             getattr(message, "out", False)
             and getattr(message, "via_bot_id", False)
@@ -97,7 +95,7 @@ strings_ua = {
             silent=True,
         )
 
-    async def _check_bot(self, username: str) -> bool:
+        async def _check_bot(self, username: str) -> bool:
         async with self._client.conversation("@BotFather", exclusive=False) as conv:
             try:
                 m = await conv.send_message("/token")
