@@ -214,9 +214,9 @@ class acbotInfoMod(loader.Module):
         tz = datetime.timezone(offset)
         time1 = datetime.datetime.now(tz)
         time = time1.strftime("%H:%M:%S")
-cpu_usage=utils.get_cpu_usage(),
-                ram_usage=f"{utils.get_ram_usage()} MB",
-                branch=version.branch,
+        cpu_usage=utils.get_cpu_usage(),
+        ram_usage=f"{utils.get_ram_usage()} MB",
+        branch=version.branch,
             )
             if self.config["custom_message"]
             else (
