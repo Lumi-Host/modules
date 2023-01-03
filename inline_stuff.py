@@ -37,7 +37,7 @@ class InlineStuffMod(loader.Module):
      }
 
 
-     strings_ua = {
+strings_ua = {
         "bot_username_invalid": (
             "<emoji document_id=5415905755406539934>🚫</emoji> <b>Неправильний нік"
             " бота. Він має закінчуватись на </b><code>bot</code><b> и бути не коротше"
