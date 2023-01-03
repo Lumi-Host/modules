@@ -19,7 +19,7 @@ import git
 from telethon.tl.types import Message
 from telethon.utils import get_display_name
 
-from .. import loader, main, utils
+from .. import loader, main, utils, version
 import datetime
 import time
 from ..inline.types import InlineQuery
@@ -37,6 +37,9 @@ class acbotInfoMod(loader.Module):
         "version": "Version",
         "build": "Build",
         "prefix": "Prefix",
+        "branch": "Branch",
+        "cpu_usage": "CPU usage",
+        "ram_usage": "RAM usage",
         "send_info": "Send bot info.",
         "description": "ℹ This will not compromise any sensitive info.",
         "up-to-date": "😌 Up-to-date.",
@@ -54,12 +57,15 @@ class acbotInfoMod(loader.Module):
         "version": "Версiя",
         "build": "Збірка",
         "prefix": "Префікс",
+        "branch": "Гілка",
+        "cpu_usage": "використання CPU",
+        "ram_usage": "використання RAM",
         "send_info": "Send bot info.",
         "description": "ℹ Це не розкриє особистої інформації :)",
         "_ihandle_doc_info": "Send bot info.",
         "up-to-date": "😌 Актуальна версия.",
         "update_required": "😕 Потрібне оновлення </b><code>.update</code><b>",
-        "_cfg_cst_msg": "Кастом текст повідомлення в info. Може мати ключові слова {me}, {version}, {build}, {prefix}, {platform}, {upd}.",
+        "_cfg_cst_msg": "Кастом текст повідомлення в info. Може мати ключові слова {me}, {version}, {build}, {prefix}, {platform}, {cpu_usage}, {ram_usage}, {branch}",
         "_cfg_cst_btn": "Кастом кнопка повідомлення в info. Залиш пустим, щоб при прибрати.",
         "_cfg_cst_bnr": "Кастом банер.",
         "_cfg_cst_frmt": "Кастом формат файлу для банера.",
@@ -208,29 +214,40 @@ class acbotInfoMod(loader.Module):
         tz = datetime.timezone(offset)
         time1 = datetime.datetime.now(tz)
         time = time1.strftime("%H:%M:%S")
-
-        return (
-            "<b> </b>\n"
-            + self.config["custom_message"].format(
-                me=me,
-                version=version,
-                build=build,
-                upd=upd,
-                prefix=prefix,
-                platform=platform,
-                uptime=uptime,
-                time=time,
+cpu_usage=utils.get_cpu_usage(),
+                ram_usage=f"{utils.get_ram_usage()} MB",
+                branch=version.branch,
             )
-            if self.config["custom_message"] != "no"
+            if self.config["custom_message"]
             else (
-                "<b>𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜 𝚋𝚘𝚝✍️ </b>\n"
-                f'<b>🤴 {self.strings("owner")}: </b>{me}\n\n'
-                f"<b>🕶 {self.strings('version')}: </b>{version} {build}\n"
-                f"<b>{upd}</b>\n"
-                f"<b>⏳ Uptime: {uptime}</b>\n\n"
-                f"<b>⌚ Time: {time}</b>\n"
-                f"<b>📼 {self.strings('prefix')}: </b>{prefix}\n"
-                f"{platform}\n"
+                f'<b>{{}}</b>\n\n<b>{{}} {self.strings("owner")}:</b> {me}\n\n<b>{{}}'
+                f" {self.strings('version')}:</b> {_version} {build}\n<b>{{}}"
+                f" {self.strings('branch')}:"
+                f"</b> <code>{version.branch}</code>\n{upd}\n\n<b>{{}}"
+                f" {self.strings('prefix')}:</b> {prefix}\n<b>{{}}"
+                f" {self.strings('uptime')}:"
+                f"</b> {utils.formatted_uptime()}\n\n<b>{{}}"
+                f" {self.strings('cpu_usage')}:"
+                f"</b> <i>~{utils.get_cpu_usage()} %</i>\n<b>{{}}"
+                f" {self.strings('ram_usage')}:"
+                f"</b> <i>~{utils.get_ram_usage()} MB</i>\n<b>{{}}</b>"
+            ).format(
+                *map(
+                    lambda x: utils.remove_html(x) if inline else x,
+                    (
+                        utils.get_platform_emoji()
+                        if self._client.acbot_me.premium and not inline
+                   else "𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️",
+                        "😎",
+                        "💫",
+                        "🌳",
+                        "⌨️",
+                        "⌛️",
+                        "⚡️",
+                        "💼",
+                        platform,
+                    ),
+                )
             )
         )
 
