@@ -1,12 +1,19 @@
+
+#              © Copyright 2022
+#           https://t.me/authorche
+#
+# 🔒      Licensed under the GNU AGPLv3
+# 🌐 https://www.gnu.org/licenses/agpl-3.0.html
+
 import re
 import string
+from hikka.inline.types import BotInlineMessage
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest
 from telethon.tl.types import Message
 
 from .. import loader, utils
-from ..inline.types import BotInlineMessage
 
 
 @loader.tds
@@ -16,12 +23,12 @@ class InlineStuffMod(loader.Module):
     strings = {
         "name": "InlineStuff",
         "bot_username_invalid": (
-            "<emoji document_id=5312526098750252863>🚫</emoji> <b>Specified bot"
-            " username is invalid. It must end with</b> <code>bot</code> <b>and contain"
+            "<emoji document_id=5415905755406539934>🚫</emoji> <b>Specified bot"
+            " username is invalid. It must end with </b><code>bot</code><b> and contain"
             " at least 4 symbols</b>"
         ),
         "bot_username_occupied": (
-            "<emoji document_id=5312526098750252863>🚫</emoji> <b>This username is"
+            "<emoji document_id=5415905755406539934>🚫</emoji> <b>This username is"
             " already occupied</b>"
         ),
         "bot_updated": (
@@ -29,15 +36,14 @@ class InlineStuffMod(loader.Module):
             " saved. Restart userbot to apply changes</b>"
         ),
         "this_is_hikka": (
-            "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
-            " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
-            ' href="https://t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
-            ' href="http://authorche.ml">Links</a></b>'   
-        ),
-     }
+            "✌️ <b>Hello! This is 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. You can"
+            " contact with bot owner via /feedback</b>\n\n<b>🌍 <a"
+            ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
+            ' href="t.me/ac_ubot">AuthorUB😎</a></b>'
+         ),
+    }
 
-
-strings_ua = {
+    strings_ua = {
         "bot_username_invalid": (
             "<emoji document_id=5415905755406539934>🚫</emoji> <b>Неправильний нік"
             " бота. Він має закінчуватись на </b><code>bot</code><b> и бути не коротше"
@@ -54,12 +60,12 @@ strings_ua = {
         "this_is_hikka": (
              "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
-            ' href="https://t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
-            ' href="http://authorche.ml">Links</a></b>'   
-       ),
+            ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
+            ' href="https://t.me/ac_ubot">AuthorUB😎</a></b>'
+        ),
     }
 
-        async def watcher(self, message: Message):
+    async def watcher(self, message: Message):
         if (
             getattr(message, "out", False)
             and getattr(message, "via_bot_id", False)
@@ -82,7 +88,7 @@ strings_ua = {
 
         await message.delete()
 
-        m = await message.respond("✍️", reply_to=utils.get_topic(message))
+        m = await message.respond("✍ <b>Opening gallery...</b>")
 
         await self.inline.gallery(
             message=m,
@@ -95,7 +101,7 @@ strings_ua = {
             silent=True,
         )
 
-        async def _check_bot(self, username: str) -> bool:
+    async def _check_bot(self, username: str) -> bool:
         async with self._client.conversation("@BotFather", exclusive=False) as conv:
             try:
                 m = await conv.send_message("/token")
@@ -124,15 +130,7 @@ strings_ua = {
 
                     return True
 
-    @loader.command(
-        ru_doc="<юзернейм> - Изменить юзернейм инлайн бота",
-        it_doc="<username> - Cambia il nome utente del bot inline",
-        de_doc="<username> - Ändere den Inline-Bot-Nutzernamen",
-        tr_doc="<kullanıcı adı> - İçe aktarma botunun kullanıcı adını değiştirin",
-        uz_doc="<foydalanuvchi nomi> - Bot foydalanuvchi nomini o'zgartiring",
-        es_doc="<nombre de usuario> - Cambia el nombre de usuario del bot de inline",
-        kk_doc="<пайдаланушы аты> - Инлайн боттың пайдаланушы атын өзгерту",
-    )
+    @loader.command(ua_doc="<юзернейм> - Змінити юзернейм інлайн бота")
     async def ch_author_bot(self, message: Message):
         """<username> - Change your acbot inline bot username"""
         args = utils.get_args_raw(message).strip("@")
@@ -170,7 +168,7 @@ strings_ua = {
             caption=self.strings("this_is_hikka"),
         )
 
-    async def client_ready(self):
+    async def client_ready(self, client, db):
         if self.get("migrated"):
             return
 
