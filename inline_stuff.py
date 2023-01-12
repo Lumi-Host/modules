@@ -1,19 +1,13 @@
 
-#              © Copyright 2022
-#           https://t.me/authorche
-#
-# 🔒      Licensed under the GNU AGPLv3
-# 🌐 https://www.gnu.org/licenses/agpl-3.0.html
-
 import re
 import string
-from hikka.inline.types import BotInlineMessage
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest
 from telethon.tl.types import Message
 
 from .. import loader, utils
+from ..inline.types import BotInlineMessage
 
 
 @loader.tds
@@ -65,6 +59,8 @@ class InlineStuffMod(loader.Module):
         ),
     }
 
+    
+
     async def watcher(self, message: Message):
         if (
             getattr(message, "out", False)
@@ -88,7 +84,7 @@ class InlineStuffMod(loader.Module):
 
         await message.delete()
 
-        m = await message.respond("✍ <b>Opening gallery...</b>")
+        m = await message.respond("✍️", reply_to=utils.get_topic(message))
 
         await self.inline.gallery(
             message=m,
@@ -130,9 +126,17 @@ class InlineStuffMod(loader.Module):
 
                     return True
 
-    @loader.command(ua_doc="<юзернейм> - Змінити юзернейм інлайн бота")
+    @loader.command(
+        ru_doc="<юзернейм> - Изменить юзернейм инлайн бота",
+        it_doc="<username> - Cambia il nome utente del bot inline",
+        de_doc="<username> - Ändere den Inline-Bot-Nutzernamen",
+        tr_doc="<kullanıcı adı> - İçe aktarma botunun kullanıcı adını değiştirin",
+        uz_doc="<foydalanuvchi nomi> - Bot foydalanuvchi nomini o'zgartiring",
+        es_doc="<nombre de usuario> - Cambia el nombre de usuario del bot de inline",
+        kk_doc="<пайдаланушы аты> - Инлайн боттың пайдаланушы атын өзгерту",
+    )
     async def ch_author_bot(self, message: Message):
-        """<username> - Change your acbot inline bot username"""
+        """<username> - Change your inline bot username"""
         args = utils.get_args_raw(message).strip("@")
         if (
             not args
@@ -164,11 +168,11 @@ class InlineStuffMod(loader.Module):
             return
 
         await message.answer_photo(
-            "https://t.me/authorche/166",
+            "https://github.com/VadymYem/AuthorBot/blob/main/assets/bot_pfp.png",
             caption=self.strings("this_is_hikka"),
         )
 
-    async def client_ready(self, client, db):
+    async def client_ready(self):
         if self.get("migrated"):
             return
 
@@ -178,7 +182,7 @@ class InlineStuffMod(loader.Module):
                 "/cancel",
                 "/setinline",
                 f"@{self.inline.bot_username}",
-                "AuthorChe's",
+                "AuthorChe`s",
             ]:
                 m = await conv.send_message(msg)
                 r = await conv.get_response()
