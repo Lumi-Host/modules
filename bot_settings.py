@@ -185,7 +185,7 @@ class HikkaSettingsMod(loader.Module):
     }
 
      
-      strings_ua = {
+    strings_ua = {
         "watchers": (
             "<emoji document_id=5424885441100782420>👀</emoji>"
             " <b>Глядачі:</b>\n\n<b>{}</b>"
