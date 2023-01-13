@@ -313,7 +313,7 @@ class HikkaSecurityMod(loader.Module):
         **service_strings,
     }
             
-        strings_ua = {
+    strings_ua = {
         "no_command": (
             "<emoji document_id=5415905755406539934>🚫</emoji> <b>Команду"
             " </b><code>{}</code><b> не знайдено!</b>"
