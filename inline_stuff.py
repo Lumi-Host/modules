@@ -168,7 +168,7 @@ class InlineStuffMod(loader.Module):
             return
 
         await message.answer_photo(
-            "https://i1.sndcdn.com/avatars-n8Fpm9OmfhvNpOsV-mQnTRQ-t240x240.jpg",
+            "https://i.postimg.cc/zGtF7F6r/logo-1.jpg",
             caption=self.strings("this_is_hikka"),
         )
 
