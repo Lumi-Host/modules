@@ -36,22 +36,7 @@ class WeatherMod(loader.Module):
     id = 17
     strings = {
         "name": "Weather",
-        "author": "authorche",
     }
-
-    async def client_ready(self, client, db) -> None:
-        self.db = db
-        self.client = client
-        try:
-            channel = await self.client.get_entity(f"t.me/{self.strings['author']}")
-            await client(JoinChannelRequest(channel))
-        except Exception:
-            logger.error(f"Can't join {self.strings['author']}")
-        try:
-            post = (await client.get_messages(self.strings["author"], ids=[self.id]))[0]
-            await post.react("❤️")
-        except Exception:
-            logger.error(f"Can't react to t.me/{self.strings['author']}")
 
     async def weathercitycmd(self, message: Message) -> None:
         """Set default city for forecast"""
@@ -66,25 +51,25 @@ class WeatherMod(loader.Module):
         city = utils.get_args_raw(message)
         if not city:
             city = self.db.get(self.strings['name'], 'city', "")
-        lang = 'ua' if city and city[0].lower() in ua else 'en'
+        lang = 'ua' if city and city[0].lower() in uk else 'en'
         req = requests.get(f"https://wttr.in/{city}?m&T&lang={lang}")
         await utils.answer(message, f'<code>{n.join(req.text.splitlines()[:7])}</code>')
 
     async def weather_inline_handler(self, query: InlineQuery) -> None:
-        """Search city"""
+        """Подивитися погоду"""
         args = query.args
         if not args:
             args = self.db.get(self.strings['name'], 'city', "")
         if not args:
             return
         # req = requests.get(f"https://wttr.in/{quote_plus(args)}?format=j1").json()
-        lang = 'ua' if args and args[0].lower() in ua else 'en'
+        lang = 'uk' if args and args[0].lower() in ua else 'en'
         req = requests.get(f"https://wttr.in/{quote_plus(args)}?format=3")
         await query.answer(
             [
                 InlineQueryResultArticle(
                     id=rand(20),
-                    title=f"Forecast for {args}",
+                    title=f"Прогноз погоди в місті {args}",
                     description=req.text,
                     # thumb_url="https://i.ytimg.com/vi/IMLwb8DIksk/maxresdefault.jpg",
                     input_message_content=InputTextMessageContent(
