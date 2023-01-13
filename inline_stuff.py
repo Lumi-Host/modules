@@ -168,7 +168,7 @@ class InlineStuffMod(loader.Module):
             return
 
         await message.answer_photo(
-            "https://github.com/VadymYem/AuthorBot/blob/main/assets/acbot_pfp.png",
+            "https://i1.sndcdn.com/avatars-n8Fpm9OmfhvNpOsV-mQnTRQ-t240x240.jpg",
             caption=self.strings("this_is_hikka"),
         )
 
