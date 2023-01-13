@@ -16,27 +16,27 @@ from telethon.tl.types import Message
 
 @loader.tds
 class LongReadMod(loader.Module):
-    """Pack longreads under button spoilers"""
+    """Приховує текст під гарну кнопочку"""
 
     strings = {
         "name": "LongRead",
+        "no_text": "🚫 <b>Please specify the text to be hidden</b>",
+        "longread": (
+            "🔥 <b>Interesting message for you</b>\n<i>Click on the button to read it :) \nButton"
+            " is active for 6 hours</i>"
+        ),
+        "_cmd_doc_lr": "<text> - hide text under pretty button"
+        "_cls_doc": "Hides your text under a nice button",
+    }
+
+    strings_ua = {
         "no_text": "🚫 <b>Будь ласка, вкажіть текст, що треба приховати</b>",
         "longread": (
             "🔥 <b>Для вас цікаве повідомлення</b>\n<i>Натисніть на кнопку, щоб прочитати його :) \nКнопка"
             " активна протягом 6 годин</i>"
         ),
-        "_cmd_doc_lr": "<text> - Створити лонгрід",
-        "_cls_doc": "Ховає ваш текст",
-    }
-
-    strings_ua = {
-        "no_text": "🚫 <b>Please, specify text to hide</b>",
-        "longread": (
-            "🔥 <b>Для вас цікаве повідомлення</b>\n<i>Натисніть на кнопку, щоб прочитати його :) \nКнопка"
-            " активна протягом 6 годин</i>"
-        ),
-        "_cmd_doc_lr": "<text> - Створити лонгрід",
-        "_cls_doc": "Ховає ваш текст",
+        "_cmd_doc_lr": "<text> - приховати текст під гарну кнопочку",
+        "_cls_doc": "Ховає ваш текст під гарну кнопочку",
     }
 
     async def lrcmd(self, message: Message):
@@ -49,7 +49,7 @@ class LongReadMod(loader.Module):
             self.strings("longread"),
             message,
             reply_markup={
-                "text": "📖 Open spoiler",
+                "text": "📖 Переглянути",
                 "callback": self._handler,
                 "args": (args,),
             },
@@ -69,7 +69,7 @@ class LongReadMod(loader.Module):
             "thumb": "https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-read-free-time-wanicon-flat-wanicon.png",
             "message": self.strings("longread"),
             "reply_markup": {
-                "text": "📖 Open spoiler",
+                "text": "📖 Переглянути",
                 "callback": self._handler,
                 "args": (text,),
                 "disable_security": True,
