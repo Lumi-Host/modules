@@ -56,7 +56,7 @@ class acbotInfoMod(loader.Module):
         "prefix": "Префікс",
         "send_info": "Send bot info.",
         "description": "ℹ Це не розкриє особистої інформації :)",
-        "_ihandle_doc_info": "Send bot info.",
+        "_ihandle_doc_info": "Подивитися інформацію про бота.",
         "up-to-date": "😌 Актуальна версия.",
         "update_required": "😕 Потрібне оновлення </b><code>.update</code><b>",
         "_cfg_cst_msg": "Кастом текст повідомлення в info. Може мати ключові слова {me}, {version}, {build}, {prefix}, {platform}, {upd}.",
