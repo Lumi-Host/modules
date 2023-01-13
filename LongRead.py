@@ -26,7 +26,7 @@ class LongReadMod(loader.Module):
             " is active for 6 hours</i>"
         ),
         "_cmd_doc_lr": "<text> - hide text under pretty button"
-        "_cls_doc": "Hides your text under a nice button",
+        "_cls_doc": "Hide your text under a nice button"
     }
 
     strings_ua = {
