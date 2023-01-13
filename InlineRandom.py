@@ -60,3 +60,12 @@ class InlineRandomMod(loader.Module):
             ),
             "thumb": "https://img.icons8.com/external-filled-outline-geotatah/64/000000/external-choice-customer-satisfaction-filled-outline-filled-outline-geotatah.png",
         }
+
+    @loader.inline_everyone
+    async def person_inline_handler(self, query: InlineQuery) -> dict:
+        """This person doesn't exist"""
+
+        return {
+            "photo": f"https://thispersondoesnotexist.com/image?id={utils.rand(10)}",
+            "title": "This person doesn't exist",
+        }
