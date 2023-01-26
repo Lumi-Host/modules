@@ -116,7 +116,7 @@ class HikkaConfigMod(loader.Module):
         ),
         "option_reset": (
             "♻️ <b>Параметр </b><code>{}</code><b> модуля </b><code>{}</code><b>"
-            " скинуто до стандартного значення</b>\n<bЗадійснено: {}</b>"
+            " скинуто до стандартного значення</b>\n<b>Задійснено: {}</b>"
         ),
         "option_reset_lib": (
             "♻️ <b>Параметр </b><code>{}</code><b> бібліотеки </b><code>{}</code><b>"
