@@ -164,8 +164,7 @@ class CoreMod(loader.Module):
         ),
         "acbot": (
             "{}\n\n<emoji document_id=5388929052935462187>😎</emoji> <b>Версія:"
-            " {}.{}.{}</b>\n<emoji document_id=5228804314134226293>💪</emoji> <b>Build:"
-            " </b><i>{}</i>\n\n<emoji document_id=5247224183326256799>👌</emoji> "
+            " {}.{}.{}</b>\n<emoji document_id=5228804314134226293>💪</emoji>"
             " <b>Author's Bot: </b><i>{}</i>\n\n<emoji"
             "<b>💻 Розробник: \n"
             " t.me/AuthorChe або t.me/ac_ubot</b>"
@@ -785,18 +784,17 @@ class CoreMod(loader.Module):
         kk_doc="Hikka нұсқасын көрсету",
     )
     async def authorcmd(self, message: Message):
-        """Get Hikka version"""
+        """Get AuthorChe's version"""
         await utils.answer_file(
             message,
-            "https://github.com/hikariatama/assets/raw/master/hikka_cat_banner.mp4",
-            self.strings("hikka").format(
+            "https://t.me/authorche/137",
+            self.strings("acbot").format(
                 (
                     utils.get_platform_emoji()
                     if self._client.hikka_me.premium and CUSTOM_EMOJIS
                     else "✌️ <b>AuthorChe's bot</b>"
                 ),
                 *version.__version__,
-                utils.get_commit_url(),
                 f"{telethon.__version__} #{telethon.tl.alltlobjects.LAYER}",
                 (
                     "<emoji document_id=5377399247589088543>🔥</emoji>"
@@ -807,7 +805,7 @@ class CoreMod(loader.Module):
             )
             + (
                 ""
-                if version.branch == "master"
+                if version.branch == "main"
                 else self.strings("unstable").format(version.branch)
             ),
         )
