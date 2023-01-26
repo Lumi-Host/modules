@@ -66,7 +66,7 @@ class UpdaterMod(loader.Module):
         "no_update": "🚸 <b>You are on the latest version, pull updates anyway?</b>",
         "cancel": "🚫 Cancel",
         "lavhost_update": (
-            "<emoji document_id=5469986291380657759>✌️</emoji> <b>Your {} is"
+            "<emoji document_id=5469986291380657759>✌️</emoji> <b>Your AuthorChe's is"
             " updating...</b>"
         ),
         "full_success": (
