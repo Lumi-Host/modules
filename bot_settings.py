@@ -32,7 +32,7 @@ ALL_INVOKES = [
 
 @loader.tds
 class HikkaSettingsMod(loader.Module):
-    """Advanced settings for Hikka Userbot"""
+    """Advanced settings for AuthorBot Userbot"""
 
     strings = {
         "name": "Settings",
@@ -1127,7 +1127,7 @@ class HikkaSettingsMod(loader.Module):
             if (
                 dialog.name
                 in {
-                    "hikka-logs",
+                    "logs",
                     "hikka-onload",
                     "hikka-assets",
                     "hikka-backups",
@@ -1138,7 +1138,7 @@ class HikkaSettingsMod(loader.Module):
                 and (
                     dialog.entity.participants_count == 1
                     or dialog.entity.participants_count == 2
-                    and dialog.name in {"hikka-logs", "silent-tags"}
+                    and dialog.name in {"logs", "silent-tags"}
                 )
                 or (
                     self._client.loader.inline.init_complete
@@ -1213,8 +1213,8 @@ class HikkaSettingsMod(loader.Module):
         es_doc="Desinstalar Hikka",
         kk_doc="Hikka'ны жою",
     )
-    async def uninstall_hikka(self, message: Message):
-        """Uninstall Hikka"""
+    async def uninstall_acbot(self, message: Message):
+        """Uninstall acbot"""
         await self.inline.form(
             self.strings("deauth_confirm"),
             message,
