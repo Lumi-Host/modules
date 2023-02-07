@@ -72,7 +72,7 @@ class LoaderMod(loader.Module):
             " logs for details</b>"
         ),
         "loaded": (
-            "<emoji document_id=5188377234380954537>🌘</emoji><b> Module"
+            "<emoji document_id=5188377234380954537>✍️</emoji><b> Module"
             " </b><code>{}</code>{}<b> loaded {}</b>{}{}{}{}{}{}"
         ),
         "no_class": "<b>What class needs to be unloaded?</b>",
@@ -231,7 +231,7 @@ class LoaderMod(loader.Module):
             " вдалося. Дивись логи.</b>"
         ),
         "loaded": (
-            "<emoji document_id=5188377234380954537>🌘</emoji><b> Модуль"
+            "<emoji document_id=5188377234380954537>✍️</emoji><b> Модуль"
             " </b><code>{}</code>{}<b> завантажено {}</b>{}{}{}{}{}{}"
         ),
         "no_class": "<b>А що видаляти?</b>",
