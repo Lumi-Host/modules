@@ -1,6 +1,6 @@
 import requests
 import telegram
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Привіт! Я пошуковий бот української Вікіпедії. Що я можу допомогти тобі знайти сьогодні?\n\nВід @AuthorChe")
