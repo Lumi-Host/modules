@@ -19,7 +19,7 @@ class FeedbackBotMod(loader.Module):
 
     strings = {
         "name": "📥 Feedback",
-        "start": ("✌️ Hi, I'm feedback bot as {}"),
+        "start": ("✌️ Hi, I'm feedback bot as Author"),
         "fb_message": "📝 Take to send message",
         "wait": "⏳ You can send next message in {} second(-s)",
         "feedback": "📝 Write 1 message, and I'll send it to {}\n\n[{} per minute]",
@@ -39,7 +39,7 @@ class FeedbackBotMod(loader.Module):
     }
 
     strings_ua = {
-        "start": ("✌️ Привiт, вітаю в меню зворотнього зв'язку з {}"),
+        "start": ("✌️ Привiт, вітаю в меню зворотнього зв'язку з Автором"),
         "fb_message": "📝 Натисніть перед відправкою  повідомлення",
         "wait": "⏳ Ви можете відправити повідомлення через {} секунд(-и)",
         "feedback": "📝 Напишіть одним повідомленням",
