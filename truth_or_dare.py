@@ -29,7 +29,7 @@ class TruthOrDareMod(loader.Module):
         "kids_en": "👨‍👦 Kids",
         "party_uk": "🥳 Вечірка",
         "party_en": "🥳 Party",
-        "hot_ua": "❤️‍🔥 Палке",
+        "hot_uk": "❤️‍🔥 Палке",
         "hot_en": "❤️‍🔥 Hot",
         "mixed_uk": "🔀 Різне",
         "mixed_en": "🔀 Mixed",
