@@ -20,13 +20,13 @@ vadymyem@AuthorChe`s
 OS: Ubuntu 20.04.5 LTS aarch64 
 Host: KVM Virtual Machine virt-4.2 
 Kernel: 5.15.0-1027-oracle 
-Uptime: 3 days, 18 hours, 57 mins 
+Uptime: 2 days, 20 hours, 37 mins 
 Packages: 1378 (dpkg), 7 (snap) 
 Shell: bash 5.0.17 
 Resolution: 1024x768 
 CPU: (4) 
 GPU: 00:01.0 Red Hat, Inc. Virtio GPU 
-Memory: 8040MiB / 23988MiB</code>
+Memory: 4150MiB / 23988MiB</code>
 """)
 
 
