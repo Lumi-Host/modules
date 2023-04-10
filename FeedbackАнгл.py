@@ -107,7 +107,7 @@ class FeedbackBotEnMod(loader.Module):
                 pass
             else:
                 self._ban_list.append(fb_ban_en_id)
-                await call.answer(self.strings("user_banned").format(fb_ban_en_id))
+                await call.answer(self.strings("user_banned_en").format(fb_ban_en_id))
 
         if call.data != "fb_message_en":
             return
