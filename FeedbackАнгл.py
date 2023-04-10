@@ -19,7 +19,7 @@ class FeedbackBotEnMod(loader.Module):
 
     strings = {
         "name": "FeedbackEn",
-        "start_en": ("✌️ Hi, welcome to the feedback menu"),
+        "start_en": ("✌️ Hi, welcome to the feedback menu.\nFamiliarize yourself with the rules of communication on the Internet before communicating (in bot description)"),
         "fb_message_en": "📝 Take to send message",
         "wait_en": "⏳ You can send next message in {} second(-s)",
         "feedback_en": "📝 Write 1 message",
