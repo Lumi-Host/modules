@@ -24,7 +24,7 @@ class FeedbackBotEnMod(loader.Module):
         "wait_en": "⏳ You can send next message in {} second(-s)",
         "feedback_en": "📝 Write 1 message",
         "sent_en": "📩 Message sent",
-        "banned_en": "🚫 You are banned",
+        "banned_en": "🚫 You violate the rules. Your access restricted!",
         "user_banned_en": "🚫 {} is banned",
          "/nometa": (
             "👨‍🎓 <b><u>Internet-talk rules:</u></b>\n\n"
