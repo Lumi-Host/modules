@@ -78,7 +78,7 @@ if "RAILWAY" in os.environ:
 
 
 @loader.tds
-class QuickstartMod(loader.Module):
+class WelcomeAcMod(loader.Module):
     """Notifies user about userbot installation"""
 
     strings = {"name": "Quickstart"}
