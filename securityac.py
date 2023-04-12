@@ -28,7 +28,7 @@ from ..security import (
 
 
 @loader.tds
-class HikkaSecurityMod(loader.Module):
+class SecurityAcMod(loader.Module):
     """Control security settings"""
 
     service_strings = {
