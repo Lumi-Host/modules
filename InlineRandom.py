@@ -1,3 +1,4 @@
+# meta pic: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTBg4abSniVs-R8OVva8dtSP5riiDEwwsHw&usqp=CAU
 from random import choice, randint
 
 from .. import loader, utils
