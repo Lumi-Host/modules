@@ -29,7 +29,7 @@ class StuffMod(loader.Module):
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Config successfully"
             " saved. Restart userbot to apply changes</b>"
         ),
-        "this_is_acbot": (
+        "this_is_hikka": (
             "✌️ <b>Hello! This is 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. You can"
             " contact with bot owner via /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
@@ -51,7 +51,7 @@ class StuffMod(loader.Module):
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Налаштування збережено."
             " Для їх застосування потрібно перезавантаження AuthorChe`s</b>"
         ),
-        "this_is_acbot": (
+        "this_is_hikka": (
              "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
