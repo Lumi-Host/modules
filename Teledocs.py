@@ -5,7 +5,7 @@
 # May be working a lil bit weird, because info was manually
 # parsed from telegram schema and official telethon search
 # mechanism was used as a base for this search
-# meta pic: https://www.google.com/search?q=docs+picture&tbm=isch&ved=2ahUKEwjgkNqi2aP-AhWkTOUKHfZ-DVsQ2-cCegQIABAC&oq=docs+picture&gs_lcp=ChJtb2JpbGUtZ3dzLXdpei1pbWcQAzIHCAAQgAQQEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAIEB4QEzIICAAQCBAeEBM6BAgjECdQyiNY5SRg5ihoAHAAeACAAcIBiAHQBpIBAzAuNZgBAKABAcABAQ&sclient=mobile-gws-wiz-img&ei=QU02ZKDsJaSZlQf2_bXYBQ&bih=813&biw=424&client=ms-android-meizu&prmd=ivsn#imgrc=iV5h0vpnTXdenM&imgdii=Fuhkk1Nr6F_ITM&lnspr=W10=
+# meta pic: https://blog.mailon.com.ua/wp-content/uploads/2020/11/5c06f7ffb0660.png
 import re
 
 import requests as rqsts
