@@ -3,7 +3,7 @@ __version__ = (1, 0, 4)
 # scope: inline
 # scope: acbot_only
 # scope: acbot_min 1.3.3
-
+# meta pic: https://img.icons8.com/external-sketchy-juicy-fish/480/000000/external-anonymous-cryptography-sketchy-sketchy-juicy-fish.png
 from telethon.utils import get_display_name
 from telethon.utils import resolve_inline_message_id
 import logging
