@@ -36,7 +36,7 @@ class MenuBotMod(loader.Module):
         "/menu": (
         "✌️<b>Привіт, вітаю в меню\n"
         "Команди які ви можете використовувати</b>:\n"
-        "<code>/start</code> — <i>щоб перезапустити бота</i>\n"
+        "<code>/restart</code> — <i>щоб перезапустити бота</i>\n"
 "<code>/feedback</code> — <i>UA🇺🇦 feedback (зворотній зв`язок)</i>\n"
 "<code>/feedback_en</code> — <i>EN🇬🇧 feedback</i>\n"
 "<code>/nometa_en</code> — <i>Internet talk rules</i>\n"
