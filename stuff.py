@@ -165,12 +165,12 @@ class StuffMod(loader.Module):
         await utils.answer(message, self.strings("bot_updated"))
 
     async def aiogram_watcher(self, message: BotInlineMessage):
-        if message.text != "/start":
+        if message.text != "/hikka_huinya_polnaja":
             return
 
         await message.answer_photo(
-            "https://i.postimg.cc/zGtF7F6r/logo-1.jpg",
-            caption=self.strings("this_is_acbot"),
+            "https://t.me/EUAnonymousGroup/20",
+            caption=self.strings("this_is_hikka"),
         )
 
     async def client_ready(self):
