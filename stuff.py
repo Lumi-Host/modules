@@ -165,11 +165,11 @@ class StuffMod(loader.Module):
         await utils.answer(message, self.strings("bot_updated"))
 
     async def aiogram_watcher(self, message: BotInlineMessage):
-        if message.text != "/hikka_huinya_polnaja":
+        if message.text != "/start":
             return
 
         await message.answer_photo(
-            "https://t.me/EUAnonymousGroup/20",
+            "https://te.legra.ph/file/b743c91b80ea4025024ae.jpg",
             caption=self.strings("this_is_hikka"),
         )
 
