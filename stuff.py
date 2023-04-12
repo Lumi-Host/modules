@@ -35,6 +35,13 @@ class StuffMod(loader.Module):
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
             ' href="https://www.instagram.com/Vadym_Yem">Instagram😎</a></b>'
          ),
+         "acbot": (
+             "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
+            " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
+            ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
+            ' href="https://www.instagram.com/vadym_yem">Instagram😎</a></b>\n\n'
+            "<i>Feedback for foreign people</i> — /feedback_en"
+        ),
     }
 
     strings_ua = {
@@ -52,6 +59,13 @@ class StuffMod(loader.Module):
             " Для їх застосування потрібно перезавантаження AuthorChe`s</b>"
         ),
         "this_is_hikka": (
+             "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
+            " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
+            ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
+            ' href="https://www.instagram.com/vadym_yem">Instagram😎</a></b>\n\n'
+            "<i>Feedback for foreign people</i> — /feedback_en"
+        ),
+        "acbot": (
              "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
@@ -170,7 +184,7 @@ class StuffMod(loader.Module):
 
         await message.answer_photo(
             "https://te.legra.ph/file/b743c91b80ea4025024ae.jpg",
-            caption=self.strings("this_is_hikka"),
+            caption=self.strings("acbot"),
         )
 
     async def client_ready(self):
