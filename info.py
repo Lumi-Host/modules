@@ -12,7 +12,7 @@ __version__ = (2, 5, 0)
 # scope: inline
 # scope: acbot_only
 # scope: acbot_min 1.1.27
-
+# meta pic: https://img.freepik.com/free-icon/info-logo-circle_318-947.jpg
 import logging
 import git
 
