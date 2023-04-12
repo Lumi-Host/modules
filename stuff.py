@@ -40,8 +40,8 @@ class StuffMod(loader.Module):
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
             ' href="https://www.instagram.com/vadym_yem">Instagram😎</a></b>\n\n'
-            "<i>Feedback for foreign people</i> — /feedback_en\n"
-            "Use /menu to see a list of all commands"
+            "<i>Feedback for foreign people</i> — /feedback_en \n"
+            " Use /menu to see a list of all commands"
         ),
     }
 
