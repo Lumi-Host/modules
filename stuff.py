@@ -40,7 +40,8 @@ class StuffMod(loader.Module):
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
             ' href="https://www.instagram.com/vadym_yem">Instagram😎</a></b>\n\n'
-            "<i>Feedback for foreign people</i> — /feedback_en"
+            "<i>Feedback for foreign people</i> — /feedback_en\n"
+            "Use /menu to see a list of all commands"
         ),
     }
 
@@ -71,6 +72,7 @@ class StuffMod(loader.Module):
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
             ' href="https://www.instagram.com/vadym_yem">Instagram😎</a></b>\n\n'
             "<i>Feedback for foreign people</i> — /feedback_en"
+            "Use /menu to see a list of all commands"
         ),
     }
 
@@ -179,7 +181,7 @@ class StuffMod(loader.Module):
         await utils.answer(message, self.strings("bot_updated"))
 
     async def aiogram_watcher(self, message: BotInlineMessage):
-        if message.text != "/start":
+        if message.text != "/help":
             return
 
         await message.answer_photo(
