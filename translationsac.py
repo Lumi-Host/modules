@@ -1,8 +1,3 @@
-#             █ █ ▀ █▄▀ ▄▀█ █▀█ ▀
-#             █▀█ █ █ █ █▀█ █▀▄ █
-#              © Copyright 2022
-#           https://t.me/hikariatama
-#
 # 🔒 Licensed under the GNU AGPLv3
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 
@@ -30,11 +25,11 @@ SUPPORTED_LANGUAGES = {
 
 
 @loader.tds
-class Translations(loader.Module):
+class TranslationsAc(loader.Module):
     """Processes internal translations"""
 
     strings = {
-        "name": "Translations",
+        "name": "TranslationsAc",
         "lang_saved": "{} <b>Language saved!</b>",
         "pack_saved": (
             "<emoji document_id=5197474765387864959>👍</emoji> <b>Translate pack"
@@ -143,8 +138,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ У вас {} доступная(-ых) команда(-ы)",
         "inline_cmds_msg": "<b>ℹ️ Доступные inline команды:</b>\n\n{}",
         "run_command": "🏌️ Выполнить команду",
-        "command_msg": "<b>🌘 Команда «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Команда «{}»",
+        "command_msg": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Команда «{}»",
         "button403": "Вы не можете нажать на эту кнопку!",
         "keep_id": "⚠️ Не удаляйте ID! {}",
         "choose_language": "🗽 <b>Выберите язык</b>",
@@ -275,8 +270,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ Hai {} comando(-i) disponibili",
         "inline_cmds_msg": "<b>ℹ️ Comandi inline disponibili:</b>\n\n{}",
         "run_command": "🏌️ Esegui comando",
-        "command_msg": "<b>🌘 Comando «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Comando «{}»",
+        "command_msg": "<b>✍ Comando «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Comando «{}»",
         "button403": "Non puoi premere questo pulsante!",
         "keep_id": "⚠️ Non cancellare ID! {}",
         "choose_language": "🗽 <b>Scegli la lingua</b>",
@@ -346,8 +341,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ Sie haben {} verfügbare(n) Befehl(e)",
         "inline_cmds_msg": "<b>ℹ️ Verfügbare Inline-Befehle:</b>\n\n{}",
         "run_command": "🏌️ Befehl ausführen",
-        "command_msg": "<b>🌘 Befehl «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Befehl «{}»",
+        "command_msg": "<b>✍ Befehl «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Befehl «{}»",
         "button403": "Sie können auf diese Schaltfläche nicht klicken!",
         "keep_id": "⚠️ Löschen sie das ID nicht! {}",
         "choose_language": "🗽 <b>Wählen Sie eine Sprache</b>",
@@ -417,8 +412,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ {} adet kullanılabilir komutunuz var",
         "inline_cmds_msg": "<b>ℹ️ Kullanılabilir satır içi komutlar:</b>\n\n{}",
         "run_command": "🏌️ Komutu çalıştır",
-        "command_msg": "<b>🌘 Komut «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Komut «{}»",
+        "command_msg": "<b>✍ Komut «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Komut «{}»",
         "button403": "Bu düğmeye basamazsınız!",
         "keep_id": "⚠️ ID'yi silmeyin! {}",
         "choose_language": "🗽 <b>Bir dil seçin</b>",
@@ -487,8 +482,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ Sizda {} mavjud buyruq bor",
         "inline_cmds_msg": "<b>ℹ️ Mavjud inline buyruqlar:</b>\n\n{}",
         "run_command": "🏌️ Buyruqni bajarish",
-        "command_msg": "<b>🌘 Buyruq «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Buyruq «{}»",
+        "command_msg": "<b>✍ Buyruq «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Buyruq «{}»",
         "button403": "Siz ushbu tugmani bosib bo'lmaysiz!",
         "keep_id": "⚠️ ID-ni o'chirmang! {}",
         "choose_language": "🗽 <b>Tilni tanlang</b>",
@@ -557,8 +552,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ {} comandos disponibles",
         "inline_cmds_msg": "<b>ℹ️ Comandos disponibles:</b>\n\n{}",
         "run_command": "🏌️ Ejecutar comando",
-        "command_msg": "<b>🌘 Comando '{}'</b>\n\n<i>{}</i>",
-        "command": "🌘 Comando '{}'",
+        "command_msg": "<b>✍ Comando '{}'</b>\n\n<i>{}</i>",
+        "command": "✍ Comando '{}'",
         "button403": "¡No puedes presionar este botón!",
         "button404": "¡No puedes presionar este botón ahora!",
         "keep_id": "⚠️ ¡No elimines el ID! {}",
@@ -627,8 +622,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ Сіздің {} қол жетімді команда(-лар)ыңыз бар",
         "inline_cmds_msg": "<b>ℹ️ Қол жетімді inline командалар:</b>\n\n{}",
         "run_command": "🏌️ Команданы іске қосу",
-        "command_msg": "<b>🌘 «{}» командасы</b>\n\n<i>{}</i>",
-        "command": "🌘 «{}» командасы",
+        "command_msg": "<b>✍ «{}» командасы</b>\n\n<i>{}</i>",
+        "command": "✍ «{}» командасы",
         "button403": "Сіз бұл түймешіге баса алмайсыз!",
         "keep_id": "⚠️ ID тастамаңыз! {}",
         "choose_language": "🗽 <b>Тілді таңдаңыз</b>",
@@ -693,8 +688,8 @@ class Translations(loader.Module):
         "inline_cmds": "ℹ️ Сездә {} уңайлы командалар бар",
         "inline_cmds_msg": "<b>ℹ️ Inline командалар:</b>\n\n{}",
         "run_command": "🏌️ Команданы үтәгез",
-        "command_msg": "<b>🌘 Команда «{}»</b>\n\n<i>{}</i>",
-        "command": "🌘 Команда «{}»",
+        "command_msg": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
+        "command": "✍ Команда «{}»",
         "button403": "Сез төймәгә баса алмыйсыз!",
         "keep_id": "⚠️ ID'ны бетеремэгез {}",
         "choose_language": "🗽 <b>Телне таңдаңыз</b>",
@@ -812,7 +807,7 @@ class Translations(loader.Module):
         ),
     )
     async def dllangpackcmd(self, message: Message):
-        """[link to a langpack | empty to remove] - Change Hikka translate pack (external)
+        """[link to a langpack | empty to remove] - Change translate pack (external)
         """
         args = utils.get_args_raw(message)
 
@@ -821,7 +816,6 @@ class Translations(loader.Module):
             await self.translator.init()
             await utils.answer(message, self.strings("lang_removed"))
             return
-
         if not utils.check_url(args):
             await utils.answer(message, self.strings("check_url"))
             return
