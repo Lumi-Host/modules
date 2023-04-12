@@ -8,7 +8,7 @@ __version__ = (1, 0, 2)
 # scope: inline
 # scope: acbot_only
 # scope: acbot_min 1.2.10
-
+# meta pic: https://fabrika-slov.com/wp-content/uploads/2021/01/longread.jpg
 from .. import loader, utils
 from ..inline.types import InlineCall, InlineQuery
 from telethon.tl.types import Message
