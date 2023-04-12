@@ -11,7 +11,7 @@ from ..inline.types import BotInlineMessage
 
 
 @loader.tds
-class InlineStuffMod(loader.Module):
+class StuffMod(loader.Module):
     """Provides support for inline stuff"""
 
     strings = {
@@ -29,7 +29,7 @@ class InlineStuffMod(loader.Module):
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Config successfully"
             " saved. Restart userbot to apply changes</b>"
         ),
-        "this_is_hikka": (
+        "this_is_acbot": (
             "✌️ <b>Hello! This is 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. You can"
             " contact with bot owner via /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
@@ -51,7 +51,7 @@ class InlineStuffMod(loader.Module):
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Налаштування збережено."
             " Для їх застосування потрібно перезавантаження AuthorChe`s</b>"
         ),
-        "this_is_hikka": (
+        "this_is_acbot": (
              "✌️ <b>Привіт! Це 𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎'𝚜✍️. Ви можете"
             " зв'язатися з власником боту використавши /feedback</b>\n\n<b>🌍 <a"
             ' href="t.me/AuthorChe">𝙰𝚞𝚝𝚑𝚘𝚛𝙲𝚑𝚎✍️</a></b>\n<b>👥 <a'
@@ -170,7 +170,7 @@ class InlineStuffMod(loader.Module):
 
         await message.answer_photo(
             "https://i.postimg.cc/zGtF7F6r/logo-1.jpg",
-            caption=self.strings("this_is_hikka"),
+            caption=self.strings("this_is_acbot"),
         )
 
     async def client_ready(self):
