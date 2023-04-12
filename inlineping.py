@@ -7,6 +7,7 @@
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 
 # meta developer: @authorche
+# meta pic: https://static.vecteezy.com/system/resources/previews/007/619/547/original/fast-and-speed-logo-template-automotive-logo-template-free-vector.jpg
 import logging
 import time
 
