@@ -3,7 +3,7 @@ __version__ = (1, 1, 0)
 # scope: inline_content
 # requires: requests
 # meta developer: @authorche
-
+# meta pic: https://www.google.com/search?q=weather+logo&tbm=isch&ved=2ahUKEwiys67n2aP-AhWMh_0HHYTPB3kQ2-cCegQIABAC&oq=weather+logo&gs_lcp=ChJtb2JpbGUtZ3dzLXdpei1pbWcQAzIFCAAQgAQyBQgAEIAEMgQIABAeMgQIABAeMgQIABAeOgQIIxAnOgYIABAHEB5Qow9Y-hZglRloAHAAeACAAdUBiAGDB5IBBTAuNC4xmAEAoAEBwAEB&sclient=mobile-gws-wiz-img&ei=0U02ZPKGJYyP9u8PhJ-fyAc&bih=813&biw=424&client=ms-android-meizu&prmd=ivsn#imgrc=lr3pl-R_YP76qM&lnspr=W10=
 import requests
 from aiogram.types import (
     InlineKeyboardMarkup,
