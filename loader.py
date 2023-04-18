@@ -76,7 +76,7 @@ class LoaderMod(loader.Module):
             " </b><code>{}</code>{}<b> loaded {}</b>{}{}{}{}{}{}"
         ),
         "no_class": "<b>What class needs to be unloaded?</b>",
-        "unloaded": (
+        "un": (
             "<emoji document_id=5469654973308476699>💣</emoji><b> Module {}"
             " unloaded.</b>"
         ),
@@ -235,7 +235,7 @@ class LoaderMod(loader.Module):
             " </b><code>{}</code>{}<b> завантажено {}</b>{}{}{}{}{}{}"
         ),
         "no_class": "<b>А що видаляти?</b>",
-        "unloaded": (
+        "un": (
             "<emoji document_id=5469654973308476699>💣</emoji><b> Модуль {}"
             " видалено.</b>"
         ),
@@ -1298,7 +1298,7 @@ class LoaderMod(loader.Module):
             )
 
         msg = (
-            self.strings("unloaded").format(
+            self.strings("un").format(
                 ", ".join(
                     [(mod[:-3] if mod.endswith("Mod") else mod) for mod in worked]
                 )
