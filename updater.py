@@ -42,7 +42,7 @@ class UpdaterMod(loader.Module):
             "<emoji document_id=5456255401194429832>📖</emoji> <b>Read the source code"
             " from</b> <a href='{}'>here</a>"
         ),
-        "restarting_caption": (
+        "restarting_caption1": (
             "<emoji document_id=6318970114548958978>🕗</emoji> <b>Your {} is"
             " restarting...</b>"
         ),
@@ -54,14 +54,14 @@ class UpdaterMod(loader.Module):
             "<emoji document_id=6318970114548958978>🕗</emoji> <b>Installing"
             " updates...</b>"
         ),
-        "success": (
-            "<emoji document_id=6321050180095313397>⏱</emoji> <b>Restart successful!"
+        "success1": (
+            "<emoji document_id=6321050180095313397>⏱</emoji> <b>Restart success1ful!"
             " {}</b>\n<i>But still loading modules...</i>\n<i>Restart took {}s</i>"
         ),
         "origin_cfg_doc": "Git origin URL, for where to update from",
-        "btn_restart": "🔄 Restart",
-        "btn_update": "🧭 Update",
-        "restart_confirm": "❓ <b>Are you sure you want to restart?</b>",
+        "btn_restart1": "🔄 Restart",
+        "btn_update1": "🧭 Update",
+        "restart_confirm1": "❓ <b>Are you sure you want to restart?</b>",
         "secure_boot_confirm": (
             "❓ <b>Are you sure you want to restart in secure boot mode?</b>"
         ),
@@ -73,7 +73,7 @@ class UpdaterMod(loader.Module):
         ),
         "no_update": "🚸 <b>You are on the latest version, pull updates anyway?</b>",
         "cancel": "🚫 Cancel",
-        "lavhost_restart": (
+        "lavhost_restart1": (
             "<emoji document_id=5469986291380657759>✌️</emoji> <b>Your {} is"
             " restarting...</b>"
         ),
@@ -81,7 +81,7 @@ class UpdaterMod(loader.Module):
             "<emoji document_id=5469986291380657759>✌️</emoji> <b>Your {} is"
             " updating...</b>"
         ),
-        "full_success": (
+        "full_success1": (
             "<emoji document_id=6323332130579416910>👍</emoji> <b>Userbot is fully"
             " loaded! {}</b>\n<i>Full restart took {}s</i>"
         ),
@@ -95,7 +95,7 @@ class UpdaterMod(loader.Module):
             "<emoji document_id=5456255401194429832>📖</emoji> <b>мій код можна"
             " прочитати</b> <a href='{}'>тут</a>"
         ),
-        "restarting_caption": (
+        "restarting_caption1": (
             "<emoji document_id=6318970114548958978>🕗</emoji> <b>AuthorChe's"
             " перезавантажується...</b>"
         ),
@@ -107,12 +107,12 @@ class UpdaterMod(loader.Module):
             "<emoji document_id=6318970114548958978>🕗</emoji> <b>Встановлення"
             " оновлень...</b>"
         ),
-        "success": (
+        "success1": (
             "<emoji document_id=6321050180095313397>⏱</emoji> <b>Перезавантаження"
             " успішне! {}</b>\n<i>Але код ще завантажується...</i>\n<i>Перезавантаження"
             " зайняло {} секунд</i>"
         ),
-        "full_success": (
+        "full_success1": (
             "<emoji document_id=6323332130579416910>👍</emoji> <b>AuthorChe's повністю"
             " завантажено! {}</b>\n<i>Повне перезавантаження зайняло {} секунд</i>"
         ),
@@ -121,9 +121,9 @@ class UpdaterMod(loader.Module):
             " сек</i>"
         ),
         "origin_cfg_doc": "Посилання, з якого будуть завантажуватися оновлення",
-        "btn_restart": "🔄 Перезавантажити",
-        "btn_update": "🧭 Оновити",
-        "restart_confirm": "❓ <b>Ти впевнений в цьому?</b>",
+        "btn_restart1": "🔄 Перезавантажити",
+        "btn_update1": "🧭 Оновити",
+        "restart_confirm1": "❓ <b>Ти впевнений в цьому?</b>",
         "secure_boot_confirm": (
             "❓ <b>Ти впевнений, що"
             " хочеш перезапуск в безпечному режимі?</b>"
@@ -137,7 +137,7 @@ class UpdaterMod(loader.Module):
         "no_update": "🚸 <b>В тебе остання версія. Оновити примусово?</b>",
         "cancel": "🚫 Відмінити",
         "_cls_doc": "Оновлює бот",
-        "lavhost_restart": (
+        "lavhost_restart1": (
             "<emoji document_id=5469986291380657759>✌️</emoji> <b>Твій AuthorChe`s"
             " перезавантажується...</b>"
         ),
@@ -166,11 +166,11 @@ class UpdaterMod(loader.Module):
                 or not await self.inline.form(
                     message=message,
                     text=self.strings(
-                        "secure_boot_confirm" if secure_boot else "restart_confirm"
+                        "secure_boot_confirm" if secure_boot else "restart_confirm1"
                     ),
                     reply_markup=[
                         {
-                            "text": self.strings("btn_restart"),
+                            "text": self.strings("btn_restart1"),
                             "callback": self.inline_restart,
                             "args": (secure_boot,),
                         },
@@ -214,7 +214,7 @@ class UpdaterMod(loader.Module):
 
         msg_obj = await utils.answer(
             msg_obj,
-            self.strings("restarting_caption").format(
+            self.strings("restarting_caption1").format(
                 utils.get_platform_emoji()
                 if self._client.hikka_me.premium
                 and CUSTOM_EMOJIS
@@ -222,7 +222,7 @@ class UpdaterMod(loader.Module):
                 else "hikka"
             )
             if "LAVHOST" not in os.environ
-            else self.strings("lavhost_restart").format(
+            else self.strings("lavhost_restart1").format(
                 '</b><emoji document_id="5192756799647785066">✌️</emoji><emoji'
                 ' document_id="5193117564015747203">✌️</emoji><emoji'
                 ' document_id="5195050806105087456">✌️</emoji><emoji'
@@ -326,7 +326,7 @@ class UpdaterMod(loader.Module):
                     else self.strings("no_update"),
                     reply_markup=[
                         {
-                            "text": self.strings("btn_update"),
+                            "text": self.strings("btn_update1"),
                             "callback": self.inline_update,
                         },
                         {"text": self.strings("cancel"), "action": "close"},
@@ -495,14 +495,14 @@ class UpdaterMod(loader.Module):
             )
 
     async def update_complete(self):
-        logger.debug("Self update successful! Edit message")
+        logger.debug("Self update success1ful! Edit message")
         start = self.get("restart_ts")
         try:
             took = round(time.time() - start)
         except Exception:
             took = "n/a"
 
-        msg = self.strings("success").format(utils.ascii_face(), took)
+        msg = self.strings("success1").format(utils.ascii_face(), took)
         ms = self.get("selfupdatemsg")
 
         if ":" in str(ms):
@@ -528,7 +528,7 @@ class UpdaterMod(loader.Module):
 
         ms = self.get("selfupdatemsg")
         msg = self.strings(
-            "secure_boot_complete" if secure_boot else "full_success"
+            "secure_boot_complete" if secure_boot else "full_success1"
         ).format(utils.ascii_face(), took)
 
         if ms is None:
