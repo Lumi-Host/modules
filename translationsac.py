@@ -68,12 +68,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 There are no available inline commands or you lack access to them</b>"
         ),
-        "inline_cmds": "ℹ️ You have {} available command(-s)",
-        "inline_cmds_msg": "<b>ℹ️ Available inline commands:</b>\n\n{}",
-        "run_command": "🏌️ Run command",
-        "command_msg": "<b>✍️ Command «{}»</b>\n\n<i>{}</i>",
-        "command": "✍️ Command «{}»",
-        "button403": "You are not allowed to press this button!",
+        "inline_cmds1": "ℹ️ You have {} available command(-s)",
+        "inline_cmds_msg1": "<b>ℹ️ Available inline commands:</b>\n\n{}",
+        "run_command1": "🏌️ Run command",
+        "command_msg1": "<b>✍️ Command «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍️ Command «{}»",
+        "button4031": "You are not allowed to press this button!",
         "keep_id": "⚠️ Do not remove ID! {}",
         "choose_language": "🗽 <b>Choose language</b>",
         "not_official": (
@@ -135,12 +135,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 Нет доступных inline команд или у вас нет доступа к ним</b>"
         ),
-        "inline_cmds": "ℹ️ У вас {} доступная(-ых) команда(-ы)",
-        "inline_cmds_msg": "<b>ℹ️ Доступные inline команды:</b>\n\n{}",
-        "run_command": "🏌️ Выполнить команду",
-        "command_msg": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Команда «{}»",
-        "button403": "Вы не можете нажать на эту кнопку!",
+        "inline_cmds1": "ℹ️ У вас {} доступная(-ых) команда(-ы)",
+        "inline_cmds_msg1": "<b>ℹ️ Доступные inline команды:</b>\n\n{}",
+        "run_command1": "🏌️ Выполнить команду",
+        "command_msg1": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Команда «{}»",
+        "button4031": "Вы не можете нажать на эту кнопку!",
         "keep_id": "⚠️ Не удаляйте ID! {}",
         "choose_language": "🗽 <b>Выберите язык</b>",
         "not_official": (
@@ -201,12 +201,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 Немає доступних команд inline або у вас немає доступу до них</b>"
         ),
-        "inline_cmds": "ℹ️ У вас {} доступна(-их) команда(-и)",
-        "inline_cmds_msg": "<b>ℹ️ Доступні команди inline:</b>\n\n{}",
-        "run_command": "🏌️ Виконати команду",
-        "command_msg": "<b>✍️ Команда «{}»</b>\n\n<i>{}</i>",
-        "command": "✍️ Команда «{}»",
-        "button403": "Ця кнопочка не для тебе :)!",
+        "inline_cmds1": "ℹ️ У вас {} доступна(-их) команда(-и)",
+        "inline_cmds_msg1": "<b>ℹ️ Доступні команди inline:</b>\n\n{}",
+        "run_command1": "🏌️ Виконати команду",
+        "command_msg1": "<b>✍️ Команда «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍️ Команда «{}»",
+        "button4031": "Ця кнопочка не для тебе :)!",
         "keep_id": "⚠️ Не видаляйте ID! {}",
         "choose_language": "🗽 <b>Виберіть мову</b>",
         "not_official": (
@@ -267,12 +267,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 Non hai comandi inline disponibili o non hai accesso a loro</b>"
         ),
-        "inline_cmds": "ℹ️ Hai {} comando(-i) disponibili",
-        "inline_cmds_msg": "<b>ℹ️ Comandi inline disponibili:</b>\n\n{}",
-        "run_command": "🏌️ Esegui comando",
-        "command_msg": "<b>✍ Comando «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Comando «{}»",
-        "button403": "Non puoi premere questo pulsante!",
+        "inline_cmds1": "ℹ️ Hai {} comando(-i) disponibili",
+        "inline_cmds_msg1": "<b>ℹ️ Comandi inline disponibili:</b>\n\n{}",
+        "run_command1": "🏌️ Esegui comando",
+        "command_msg1": "<b>✍ Comando «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Comando «{}»",
+        "button4031": "Non puoi premere questo pulsante!",
         "keep_id": "⚠️ Non cancellare ID! {}",
         "choose_language": "🗽 <b>Scegli la lingua</b>",
         "not_official": (
@@ -338,12 +338,12 @@ class TranslationsAc(loader.Module):
             "<b>😔 Keine verfügbaren Inline-Befehle oder Sie haben keinen Zugriff"
             " auf sie</b>"
         ),
-        "inline_cmds": "ℹ️ Sie haben {} verfügbare(n) Befehl(e)",
-        "inline_cmds_msg": "<b>ℹ️ Verfügbare Inline-Befehle:</b>\n\n{}",
-        "run_command": "🏌️ Befehl ausführen",
-        "command_msg": "<b>✍ Befehl «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Befehl «{}»",
-        "button403": "Sie können auf diese Schaltfläche nicht klicken!",
+        "inline_cmds1": "ℹ️ Sie haben {} verfügbare(n) Befehl(e)",
+        "inline_cmds_msg1": "<b>ℹ️ Verfügbare Inline-Befehle:</b>\n\n{}",
+        "run_command1": "🏌️ Befehl ausführen",
+        "command_msg1": "<b>✍ Befehl «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Befehl «{}»",
+        "button4031": "Sie können auf diese Schaltfläche nicht klicken!",
         "keep_id": "⚠️ Löschen sie das ID nicht! {}",
         "choose_language": "🗽 <b>Wählen Sie eine Sprache</b>",
         "not_official": (
@@ -409,12 +409,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 Kullanılabilir satır içi komutunuz yok veya erişiminiz yok</b>"
         ),
-        "inline_cmds": "ℹ️ {} adet kullanılabilir komutunuz var",
-        "inline_cmds_msg": "<b>ℹ️ Kullanılabilir satır içi komutlar:</b>\n\n{}",
-        "run_command": "🏌️ Komutu çalıştır",
-        "command_msg": "<b>✍ Komut «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Komut «{}»",
-        "button403": "Bu düğmeye basamazsınız!",
+        "inline_cmds1": "ℹ️ {} adet kullanılabilir komutunuz var",
+        "inline_cmds_msg1": "<b>ℹ️ Kullanılabilir satır içi komutlar:</b>\n\n{}",
+        "run_command1": "🏌️ Komutu çalıştır",
+        "command_msg1": "<b>✍ Komut «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Komut «{}»",
+        "button4031": "Bu düğmeye basamazsınız!",
         "keep_id": "⚠️ ID'yi silmeyin! {}",
         "choose_language": "🗽 <b>Bir dil seçin</b>",
         "not_official": (
@@ -479,12 +479,12 @@ class TranslationsAc(loader.Module):
             "<b>😔 Sizda mavjud inline buyruqlar yo'q yoki ularga kirish huquqingiz"
             " yo'q</b>"
         ),
-        "inline_cmds": "ℹ️ Sizda {} mavjud buyruq bor",
-        "inline_cmds_msg": "<b>ℹ️ Mavjud inline buyruqlar:</b>\n\n{}",
-        "run_command": "🏌️ Buyruqni bajarish",
-        "command_msg": "<b>✍ Buyruq «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Buyruq «{}»",
-        "button403": "Siz ushbu tugmani bosib bo'lmaysiz!",
+        "inline_cmds1": "ℹ️ Sizda {} mavjud buyruq bor",
+        "inline_cmds_msg1": "<b>ℹ️ Mavjud inline buyruqlar:</b>\n\n{}",
+        "run_command1": "🏌️ Buyruqni bajarish",
+        "command_msg1": "<b>✍ Buyruq «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Buyruq «{}»",
+        "button4031": "Siz ushbu tugmani bosib bo'lmaysiz!",
         "keep_id": "⚠️ ID-ni o'chirmang! {}",
         "choose_language": "🗽 <b>Tilni tanlang</b>",
         "not_official": (
@@ -549,12 +549,12 @@ class TranslationsAc(loader.Module):
             "<b>😔 No hay comandos disponibles o no tienes permiso para acceder a"
             " los comandos</b>"
         ),
-        "inline_cmds": "ℹ️ {} comandos disponibles",
-        "inline_cmds_msg": "<b>ℹ️ Comandos disponibles:</b>\n\n{}",
-        "run_command": "🏌️ Ejecutar comando",
-        "command_msg": "<b>✍ Comando '{}'</b>\n\n<i>{}</i>",
-        "command": "✍ Comando '{}'",
-        "button403": "¡No puedes presionar este botón!",
+        "inline_cmds1": "ℹ️ {} comandos disponibles",
+        "inline_cmds_msg1": "<b>ℹ️ Comandos disponibles:</b>\n\n{}",
+        "run_command1": "🏌️ Ejecutar comando",
+        "command_msg1": "<b>✍ Comando '{}'</b>\n\n<i>{}</i>",
+        "command1": "✍ Comando '{}'",
+        "button4031": "¡No puedes presionar este botón!",
         "button404": "¡No puedes presionar este botón ahora!",
         "keep_id": "⚠️ ¡No elimines el ID! {}",
         "choose_language": "🗽 <b>Elige un idioma</b>",
@@ -619,12 +619,12 @@ class TranslationsAc(loader.Module):
             "<b>😔 Қол жетімді inline командалар жоқ немесе Сізге оларға қатынасуға"
             " рұқсат жоқ</b>"
         ),
-        "inline_cmds": "ℹ️ Сіздің {} қол жетімді команда(-лар)ыңыз бар",
-        "inline_cmds_msg": "<b>ℹ️ Қол жетімді inline командалар:</b>\n\n{}",
-        "run_command": "🏌️ Команданы іске қосу",
-        "command_msg": "<b>✍ «{}» командасы</b>\n\n<i>{}</i>",
-        "command": "✍ «{}» командасы",
-        "button403": "Сіз бұл түймешіге баса алмайсыз!",
+        "inline_cmds1": "ℹ️ Сіздің {} қол жетімді команда(-лар)ыңыз бар",
+        "inline_cmds_msg1": "<b>ℹ️ Қол жетімді inline командалар:</b>\n\n{}",
+        "run_command1": "🏌️ Команданы іске қосу",
+        "command_msg1": "<b>✍ «{}» командасы</b>\n\n<i>{}</i>",
+        "command1": "✍ «{}» командасы",
+        "button4031": "Сіз бұл түймешіге баса алмайсыз!",
         "keep_id": "⚠️ ID тастамаңыз! {}",
         "choose_language": "🗽 <b>Тілді таңдаңыз</b>",
         "not_official": (
@@ -685,12 +685,12 @@ class TranslationsAc(loader.Module):
         "no_inline_cmds_msg": (
             "<b>😔 Inline командалар юк яисә аларга керү мөмкинлеге юк</b>"
         ),
-        "inline_cmds": "ℹ️ Сездә {} уңайлы командалар бар",
-        "inline_cmds_msg": "<b>ℹ️ Inline командалар:</b>\n\n{}",
-        "run_command": "🏌️ Команданы үтәгез",
-        "command_msg": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
-        "command": "✍ Команда «{}»",
-        "button403": "Сез төймәгә баса алмыйсыз!",
+        "inline_cmds1": "ℹ️ Сездә {} уңайлы командалар бар",
+        "inline_cmds_msg1": "<b>ℹ️ Inline командалар:</b>\n\n{}",
+        "run_command1": "🏌️ Команданы үтәгез",
+        "command_msg1": "<b>✍ Команда «{}»</b>\n\n<i>{}</i>",
+        "command1": "✍ Команда «{}»",
+        "button4031": "Сез төймәгә баса алмыйсыз!",
         "keep_id": "⚠️ ID'ны бетеремэгез {}",
         "choose_language": "🗽 <b>Телне таңдаңыз</b>",
         "not_official": (
