@@ -1,4 +1,3 @@
-
 #              © Copyright 2022
 #           https://t.me/authorche
 #
@@ -113,7 +112,7 @@ class TestMod(loader.Module):
             "<emoji document_id=5452023368054216810>🥶</emoji> <b>Бот заморожено на</b>"
             " <code>{}</code> <b>секунд</b>"
         ),
-        "results_ping": (
+        "results_ping1": (
             "<emoji document_id=6321050180095313397>⏱</emoji> <b>Ping"
             " AuthorChe's:</b> <code>{}</code> <b>ms</b>\n<emoji"
             " <emoji document_id=6318564094110598919>🥳</emoji> <b>Пройшло з моменту останнього"
@@ -507,7 +506,7 @@ class TestMod(loader.Module):
 
         await utils.answer(
             message,
-            self.strings("results_ping").format(
+            self.strings("results_ping1").format(
                 round((time.perf_counter_ns() - start) / 10**6, 3),
                 utils.formatted_uptime(),
             )
