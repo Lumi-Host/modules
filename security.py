@@ -1,4 +1,3 @@
-
 import contextlib
 import time
 import typing
@@ -28,7 +27,7 @@ from ..security import (
 
 
 @loader.tds
-class SecurityAcMod(loader.Module):
+class SecurityMod(loader.Module):
     """Control security settings"""
 
     service_strings = {
