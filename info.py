@@ -71,12 +71,19 @@ class acbotInfoMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "custom_message",
-                "no",
+                "💻•Owner: {me}
+🎣•Version: v-7.6.3.3
+👾•Bot: 1.8.9
+⌚️Time: {time}
+✍ Author's Stickers: <a href="https://t.me/addstickers/AuthorFunny">Funny</a>;
+<a href="https://t.me/addstickers/Gitler_by_AuthorChe">Hitler</a>
+
+It's 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸.",
                 doc=lambda: self.strings("_cfg_cst_msg"),
             ),
             loader.ConfigValue(
                 "custom_banner",
-                "https://imgur.com/Ze2TtW3",
+                "https://te.legra.ph/file/b743c91b80ea4025024ae.jpg",
                 lambda: self.strings("_cfg_cst_bnr"),
             ),
             loader.ConfigValue(
@@ -127,19 +134,19 @@ class acbotInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "custom_button4",
-                ["AuthorChe✍️", "https://t.me/AuthorChe"],
+                ["✌️Donate", "https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%224149499388981035%22%2C%22amt%22%3A%22100%22%2C%22ccy%22%3A%22UAH%22%7D"],
                 lambda: self.strings("_cfg_cst_btn"),
                 validator=loader.validators.Series(min_len=0, max_len=2),
             ),
             loader.ConfigValue(
                 "custom_button5",
-                ["AuthorChe✍️", "https://t.me/AuthorChe"],
+                [],
                 lambda: self.strings("_cfg_cst_btn"),
                 validator=loader.validators.Series(min_len=0, max_len=2),
             ),
             loader.ConfigValue(
                 "custom_button6",
-                ["AuthorChe✍️", "https://t.me/AuthorChe"],
+                [],
                 lambda: self.strings("_cfg_cst_btn"),
                 validator=loader.validators.Series(min_len=0, max_len=2),
             ),
@@ -217,7 +224,6 @@ class acbotInfoMod(loader.Module):
                 build=build,
                 upd=upd,
                 prefix=prefix,
-                platform=platform,
                 uptime=uptime,
                 time=time,
             )
@@ -230,7 +236,6 @@ class acbotInfoMod(loader.Module):
                 f"<b>⏳ Uptime: {uptime}</b>\n\n"
                 f"<b>⌚ Time: {time}</b>\n"
                 f"<b>📼 {self.strings('prefix')}: </b>{prefix}\n"
-                f"{platform}\n"
             )
         )
 
