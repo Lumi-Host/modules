@@ -59,19 +59,19 @@ class MyCryptoManagerMod(loader.Module):
                 form = (
                     "AuthorCrypto💻\n"
                     "{} <b>{} {}</b>\n"
-                    "🇺🇸 <code>{}$</code>\n"
-                    "🇷🇺 <code>{}₽</code>\n"
                     "🇺🇦 <code>{}₴</code>\n"
-                    "🇰🇿 <code>{}₸</code>"
+                    "🇺🇲 <code>{}$</code>\n"
+                    "🇰🇿 <code>{}₸</code>\n"
+                    "🏳‍⚧ <code>{}₽</code>"
                    
                 ).format(
                     smiles,
                     count,
                     coin,
-                    round(api["USD"] * count, 2),
-                    round(api["RUB"] * count, 2),
                     round(api["UAH"] * count, 2),
+                    round(api["USD"] * count, 2),
                     round(api["KZT"] * count, 2),
+                    round(api["RUB"] * count, 2),
                 )
 
          
