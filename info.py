@@ -59,7 +59,7 @@ class acbotInfoMod(loader.Module):
         "_ihandle_doc_info": "Подивитися інформацію про бота.",
         "up-to-date": "😌 Актуальна версия.",
         "update_required": "😕 Потрібне оновлення </b><code>.update</code><b>",
-        "_cfg_cst_msg": "Кастом текст повідомлення в info. Може мати ключові слова {me}, {version}, {build}, {prefix}, {platform}, {upd}.",
+        "_cfg_cst_msg": "https://t.me/c/1792035707/4262",
         "_cfg_cst_btn": "Кастом кнопка повідомлення в info. Залиш пустим, щоб при прибрати.",
         "_cfg_cst_bnr": "Кастом банер.",
         "_cfg_cst_frmt": "Кастом формат файлу для банера.",
@@ -71,14 +71,7 @@ class acbotInfoMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "custom_message",
-                "💻•Owner: {me}
-🎣•Version: v-7.6.3.3
-👾•Bot: 1.8.9
-⌚️Time: {time}
-✍ Author's Stickers: <a href="https://t.me/addstickers/AuthorFunny">Funny</a>;
-<a href="https://t.me/addstickers/Gitler_by_AuthorChe">Hitler</a>
-
-It's 𝗙𝗲𝗲𝗱𝗯𝗮𝗰𝗸.",
+                "no",
                 doc=lambda: self.strings("_cfg_cst_msg"),
             ),
             loader.ConfigValue(
