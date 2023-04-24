@@ -33,7 +33,7 @@ ARTIST_FS = 32
 
 
 @loader.tds
-class SpotifyMod(loader.Module):
+class SpotifyNowMod(loader.Module):
     """Display beautiful spotify now bar. Idea: t.me/fuccsoc. Implementation: t.me/hikariatama
     """
 
@@ -983,11 +983,8 @@ class SpotifyMod(loader.Module):
                 else ""
             )
             result += (
-                "\n<emoji document_id=5431736674147114227>🗂</emoji>"
-                f" <b>{self.strings('playlist')}</b>: <a"
-                f'by @AuthorChe'
-                if playlist_name and playlist_id
-                else ""
+                "\n\n🎵<b><a"
+                f' <b>Прослуховується з</b> Плейлиста'
             )
             result += (
                 "\n<emoji document_id=5467406098367521267>👑</emoji>"
