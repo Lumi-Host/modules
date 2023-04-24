@@ -167,11 +167,11 @@ ua = [
 ]
 
 
-class AirAlertUaTESTMod(loader.Module):
+class AirAlertUaMod(loader.Module):
     """🇺🇦 Попередження про повітряну тривогу.
     Потрібно бути підписаним на @air_alert_ua та включені повідомлення у вашому боті"""
 
-    strings = {"name": "AirAlertTEST"}
+    strings = {"name": "AirAlert"}
 
     async def client_ready(self, client, db) -> None:
         self.db = db
